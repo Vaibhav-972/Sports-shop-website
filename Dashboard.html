@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Srtyle.Css">
+</head>
+<body>
+    <div id="contener_div">
+        <div class="add_product">
+            <h1>Add Product</h1>
+        <form action="">
+            <div><label for="" id="label_name">Name</label>
+                <input type="text" placeholder="  Enter Product name" id="name">
+            </div>
+
+            <div><label for="" id="label_name">Images</label>
+                <input type="text" placeholder="  Enter Product Images" id="img">
+            </div>
+
+            <div><label for="" id="label_price">Price </label>
+                <input type="number" placeholder="  Enter Product Price" id="Price">
+            </div>
+
+            <div ><button id="btn_save_data" onclick="insertdata()">save data</button></div>
+        </form>
+
+    </div>
+    <!-- table section start -->
+    <div class="recent_order">
+        <h1>Recent Orders</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Images</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="showdata">
+                <tr>
+                    <td>101</td>
+                    <td>Watch</td>
+                    <td>2000</td>
+                    <td >Pending</td>
+                    <td class="primary">Edit</td>
+                    <td class="warning">Delete</td>
+                </tr>
+
+
+                
+                <tr>
+                    <td>101</td>
+                    <td>Watch</td>
+                    <td>2000</td>
+                    <td>Pending</td>
+                    <td class="primary">Edit</td>
+                    <td class="warning">Delete</td>
+                </tr>
+                <tr>                          
+                    <td>101</td>
+                    <td>Watch</td>
+                    <td>2000</td>
+                    <td>Pending</td>
+                    <td class="primary">Edit</td>
+                    <td class="warning">Delete</td>
+                </tr>
+            </tbody>
+            <div id="edittable"></div>
+        </table>
+     </div>
+        
+    </div>
+
+    <script src="SCript.Js"></script>
+</body>
+</html>
